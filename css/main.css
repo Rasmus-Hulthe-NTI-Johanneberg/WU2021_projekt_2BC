@@ -1,0 +1,129 @@
+.icon {
+  max-height: 32px;
+  max-width: 32px;
+}
+
+body {
+  background-color: #172d69;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.grid-wrapper{
+  display: grid;
+
+  grid-template-areas: 
+      "nv nv nv nv"
+      "b1 b1 b2 b2"
+      "f1 f2 f3 f4"
+      "fw fw fw fw";
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 50px 44.5vh 44.5vh 5vh;
+  gap: 5px;
+}
+
+
+.one {
+  grid-area: b1;
+  background:salmon;
+}
+.two {
+  grid-area: b2;
+  background: seagreen;
+}
+
+.f1 {
+  grid-area: f1;
+  /*background:orange;*/
+}
+
+.f2 {
+  grid-area: f2;
+  /*background: orangered;*/
+}
+
+.f3 {
+  grid-area: f3;
+  /*background:greenyellow;*/
+}
+.f4 {
+  grid-area: f4;
+  /*background: burlywood;*/
+}
+
+.f_img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.b_img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer {
+  grid-area: fw;
+  background:crimson;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #374b83;
+    font-family: Arial;
+    grid-area: nv;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropdown_button {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropdown_button {
+    background-color: #2a1769;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
