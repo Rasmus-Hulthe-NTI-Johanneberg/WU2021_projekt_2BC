@@ -36,11 +36,17 @@ body {
 }
 }
 
+.grid-wrapper{
+  display: grid;
+  gap: 5px;
+}
 
 @media screen and (max-width:900px) {
 
-
-  /*.grid-wrapper{
+  /*.navbar_expander{
+    display: none;
+  }
+  .grid-wrapper{
     display: grid;
   
     grid-template-areas: 
@@ -51,7 +57,12 @@ body {
         "nv f3 f4"
         "fw fw fw";
     grid-template-columns: 50%;
-    gap: 5px;*/
+    gap: 5px;
+  }}*/
+
+      
+  
+    
     .navbar{
       display: none;
     }
@@ -66,8 +77,8 @@ body {
           "f3 f4"
           "fw fw";
       gap: 5px;
-  }
-  }
+  }}
+  
 
 .one {
   grid-area: b1;
