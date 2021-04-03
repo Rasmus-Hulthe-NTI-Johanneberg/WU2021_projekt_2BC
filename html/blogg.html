@@ -1,100 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/main.css">
+    <meta charset="UTF-8">
+    <title>Css grid slurrp</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 
 <body>
-  <div class="grid-wrapper" id="grid-wrapper-blogg">
-    <!-- Grid Start -->
+    <div class="grid-wrapper" id="grid-wrapper-blogg">
+        <section class="navbar_expander">
+            <input id="nav_expander" type="image" src="../img/EXPAND.png" alt="expand" />
+        </section>
+        <div class="navbar">
+            <!-- Navbar Start -->
 
+            <!-- Image Icon Link -->
+            <a href="/html/index.html">
+                <img class="icon" src="../img/icon.jpeg" alt="Ikon för hemsidan">
+            </a>
 
-    <section class="navbar_expander">
-      <input id="nav_expander" type="image" src="../img/EXPAND.png" />
-    </section>
+            <!-- PlaceHolder 1 -->
+            <a href="/html/blogg.html">Blogg</a>
 
+            <!-- PlaceHolder 2 -->
+            <a href="/html/galleri.html">Galleri</a>
 
+            <!-- DropDown 1 -->
+            <div class="dropdown">
+                <button class="dropdown_button">Information</button>
+                <div class="dropdown-content">
+                    <a href="https://sv.wikipedia.org/wiki/1">Båt Fakta</a>
+                    <a href="https://sv.wikipedia.org/wiki/2">Kommunikation</a>
+                    <a href="https://sv.wikipedia.org/wiki/3">Planer o Platser</a>
+                </div>
+            </div>
 
-    <div class="navbar">
-      <!-- Navbar Start -->
+            <!-- DropDown 2 -->
+            <div class="dropdown">
+                <button class="dropdown_button">Lorem</button>
+                <div class="dropdown-content">
+                    <a href="https://sv.wikipedia.org/wiki/4">Ipsum</a>
+                    <a href="https://sv.wikipedia.org/wiki/5">Dolor</a>
+                    <a href="https://sv.wikipedia.org/wiki/6">Sit</a>
+                </div>
+            </div>
+        </div> <!-- Navbar end-->
 
-      <!-- Image Icon Link -->
-      <a href="/html/index.html">
-        <img class="icon" src="../img/icon.jpeg" alt="Ikon för hemsidan">
-      </a>
+        <div class="blogg_year" id="b_2021">
 
-      <!-- PlaceHolder 1 -->
-      <a href="/html/blogg.html">Blogg</a>
-
-      <!-- PlaceHolder 2 -->
-      <a href="/html/galleri.html">Galleri</a>
-
-      <!-- DropDown 1 -->
-      <div class="dropdown">
-        <button class="dropdown_button">Information</button>
-        <div class="dropdown-content">
-          <a href="https://sv.wikipedia.org/wiki/1">Båt Fakta</a>
-          <a href="https://sv.wikipedia.org/wiki/2">Kommunikation</a>
-          <a href="https://sv.wikipedia.org/wiki/3">Planer o Platser</a>
+            <div id="blogg_year_top">
+              <img class="img" src="../img/b1.webp" alt="">
+            </div>
+            <div id="blogg_year_bottom">
+              <p class="year_text"><strong>2021</strong></p>
+              <p class="year_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, doloribus.</p>
+            </div>
         </div>
-      </div>
+        <div class="blogg_year" id="b_2020">
 
-      <!-- DropDown 2 -->
-      <div class="dropdown">
-        <button class="dropdown_button">Lorem</button>
-        <div class="dropdown-content">
-          <a href="https://sv.wikipedia.org/wiki/4">Ipsum</a>
-          <a href="https://sv.wikipedia.org/wiki/5">Dolor</a>
-          <a href="https://sv.wikipedia.org/wiki/6">Sit</a>
+            <div id="blogg_year_top">
+              <img class="img" src="../img/b2.webp" alt="">
+            </div>
+            <div id="blogg_year_bottom">
+              <p class="year_text center"><strong>2021</strong></p>
+              <p class="year_text center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere.</p>
+            </div>
         </div>
-      </div>
-    </div> <!-- Navbar end-->
+        <div class="blogg_year" id="b_2019">
 
-    <!-- <section class="sb"></section>-->
+            <div id="blogg_year_top">
+              <img class="img" src="../img/b3.webp" alt="">
+            </div>
+            <div id="blogg_year_bottom">
+              <p class="year_text center"><strong>2021</strong></p>
+              <p class="year_text center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, minus!</p>
+            </div>
+        </div>
+        <div class="blogg_year" id="b_2018">
 
-    <div class="article" id="article1">
+            <div id="blogg_year_top">
+              <img class="img" src="../img/b4.webp" alt="">
+            </div>
+            <div id="blogg_year_bottom">
+              <p class="year_text center"><strong>2021</strong></p>
+              <p class="year_text center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, enim!</p>
+            </div>
+        </div>
+        <div class="blogg_year" id="b_2017">
 
-      <div id="nad_ded">
-        <img class="ded" src="../img/hilarious-stock-photos-for-memes.jpg" alt="">
-      </div>
-      <div id="sex_ed">hej</div>
+            <div id="blogg_year_top">
+              <img class="img" src="../img/b5.webp" alt="">
+            </div>
+            <div id="blogg_year_bottom">
+              <p class="year_text center"><strong>2021</strong></p>
+              <p class="year_text center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio!</p>
+            </div>
+        </div>
+        <div class="blogg_year" id="b_2016">
+
+            <div id="blogg_year_top">
+              <img class="img" src="../img/b6.webp" alt="">
+            </div>
+            <div id="blogg_year_bottom">
+              <p class="year_text center"><strong>2021</strong></p>
+              <p class="year_text center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, error?</p>
+            </div>
+        </div>
+
+        <div class="footer">Footer</div>
     </div>
-    <div class="article" id="article2">
-
-      <div id="nad_ded">då</div>
-      <div id="sex_ed">hej</div>
-    </div>
-    <div class="article" id="article3">
-
-      <div id="nad_ded">då</div>
-      <div id="sex_ed">hej</div>
-    </div>
-    <div class="article" id="article4">
-
-      <div id="nad_ded">då</div>
-      <div id="sex_ed">hej</div>
-    </div>
-    <div class="article" id="article5">
-
-      <div id="nad_ded">då</div>
-      <div id="sex_ed">hej</div>
-    </div>
-    <div class="article" id="article6">
-
-      <div id="nad_ded">då</div>
-      <div id="sex_ed">hej</div>
-    </div>
-
-
-
-    <div class="footer">Footer</div>
-  </div><!-- Grid End -->
-
-  <script src="../js/main.js"></script>
 </body>
 
 </html>
