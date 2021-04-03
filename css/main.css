@@ -49,13 +49,25 @@ body {
   grid-template-columns: 10% 20% 20% 20% 20% 10%;}
 
   #grid-wrapper-blogg{
-
+    width: 100%;
+    height: 100%;
     grid-template-areas: 
         "sb nv nv nv"
         "sb g1 g2 g3"
         "sb g4 g5 g6"
         "sb fw fw fw";
-    grid-template-columns: 10% 26% 26% 26% 10%;
+    grid-template-columns: 10% 26.6% 26.6% 26.6% 10%;
+  }
+
+  .blogg_year{
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+        "bld"
+        "bld"
+        "bld"
+        "txt";
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 @media screen and (max-width:900px) {    
@@ -103,6 +115,18 @@ body {
 #b_2016{
   grid-area: g6;
   background-color: blue;
+}
+
+.blogg_bld{
+  height: 100%;
+  grid-area: bld;
+  background: coral;
+}
+
+.blogg_txt{
+  height: 100%;
+  grid-area: txt;
+  background: crimson;
 }
 
 #ded{
