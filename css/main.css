@@ -21,35 +21,48 @@ body {
   gap: 5px;
 }
 
+.grid-wrapper-blogg{
+  display: grid;
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width:900px) {
 
   .navbar_expander{
     display: none;
   }
 
-  /*.navbar{
-    display: grid;
-  }*/
-.grid-wrapper{
+
+#grid-wrapper{
 
   grid-template-areas: 
       "sb nv nv nv nv"
       "sb b1 b1 b2 b2"
       "sb f1 f2 f3 f4"
       "sb fw fw fw fw";
-  /*grid-template-columns: repeat(4,1fr);*/
-  grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  /*grid-template-rows: 50px 44.5% 44.5% 5%;*/
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;}
+
+  #grid-wrapper-blogg{
+
+    grid-template-areas: 
+        "sb nv nv nv"
+        "sb g1 g2 g3"
+        "sb g4 g5 g6"
+        "sb fw fw fw";
+    grid-template-columns: 10% 26% 26% 26% 10%;
+  }
 }
-}
-
-
-
 @media screen and (max-width:900px) {    
     .navbar{
       display: none;
     }
-    .grid-wrapper{
+    #grid-wrapper{
     
       grid-template-areas: 
           "bt sb"
@@ -61,32 +74,68 @@ body {
   }}
   
 
-.one {
+#b_2021{
+  grid-area: g1;
+  background: red;
+}
+
+#b_2020{
+  grid-area: g2;
+  background-color: orange;
+}
+
+
+#b_2019{
+  grid-area: g3;
+  background-color: black;
+}
+
+#b_2018{
+  grid-area: g4;
+  background-color: green;
+}
+
+#b_2017{
+  grid-area: g5;
+  background: gold;
+}
+
+#b_2016{
+  grid-area: g6;
+  background-color: blue;
+}
+
+#ded{
+  width: 100%;
+  height: 100%;
+}
+
+#one {
   grid-area: b1;
   background:salmon;
 }
-.two {
+#two {
   grid-area: b2;
   background: seagreen;
 }
 
-.f1 {
+#f1 {
   grid-area: f1;
-  /*background:orange;*/
+  background:orange;
 }
 
-.f2 {
+#f2 {
   grid-area: f2;
-  /*background: orangered;*/
+  background: orangered;
 }
 
-.f3 {
+#f3 {
   grid-area: f3;
-  /*background:greenyellow;*/
+  background:greenyellow;
 }
-.f4 {
+#f4 {
   grid-area: f4;
-  /*background: burlywood;*/
+  background: burlywood;
 }
 
 .f_img{
