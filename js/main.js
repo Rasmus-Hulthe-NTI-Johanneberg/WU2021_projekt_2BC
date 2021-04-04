@@ -12,11 +12,17 @@ if (showing_val){
     document.querySelector("#grid-wrapper").style.gridTemplateAreas = '"nv sb sb" "nv b1 b1" "nv b2 b2" "nv f1 f2" "nv f3 f4" "fw fw fw"'
     document.querySelector("#grid-wrapper").style.gridTemplateColumns = "50%"
     document.querySelector(".navbar").style.display = 'grid'}
+
 }
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => 
 {
 
     let myButton = document.querySelector(".navbar_expander")
     console.log(myButton)
     myButton.addEventListener("click",show)
+
 })
