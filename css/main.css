@@ -39,6 +39,12 @@ body {
 
 
 @media screen and (min-width:0px) {    
+
+  .dropdown {
+    display: flex;
+    justify-content: center;
+  }
+
     .navbar{
       display: none;
     }
@@ -120,6 +126,9 @@ font-size: 30px;
 }
 
 @media screen and (min-width:1000px) {
+  .dropdown {
+    display: block;
+  }
   .information_text{
     font-size: 16px;
       }
@@ -423,7 +432,8 @@ background: linear-gradient(45deg, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582
   }
   
   .navbar a:hover, .dropdown:hover .dropdown_button {
-    background-color: #2a1769;
+    background: rgb(42,23,105);
+    background: linear-gradient(180deg, rgba(42,23,105,1) 0%, rgba(74,23,105,1) 100%);
   }
   
   /* Dropdown content (hidden by default) */
