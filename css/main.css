@@ -67,7 +67,7 @@ body {
       grid-template-areas: "bt sb" "b1 b1" "b2 b2" "f1 f2" "f3 f4" "fw fw";
   }
   #grid-wrapper-blogg {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Tahoma, sans-serif;
       width: 100%;
       height: 100%;
       grid-template-areas: "sb a1 sd" "sb a2 sd" "sb a3 sd" "sb a4 sd" "sb a5 sd" "sb a6 sd" "sb fw sd";
@@ -76,7 +76,7 @@ body {
       grid-gap: 5px;
   }
   #grid-wrapper-galleri {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      font-family: Tahoma, sans-serif;
       width: 100%;
       height: 100%;
       grid-template-areas: "sb g1 sd" "sb g2 sd" "sb g3 sd" "sb g4 sd" "sb g5 sd" "sb g6 sd" "sb fw sd";
@@ -127,7 +127,7 @@ body {
     background: linear-gradient(0deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
 }
   #grid-wrapper-bat-fakta {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      font-family: Tahoma, sans-serif;
       width: 100%;
       height: 200vh;
       grid-template-areas: "sb inf1 sd" "sb inf2 sd" "sb inf3 sd" "sb inf4 sd" "fw fw fw";
@@ -137,7 +137,7 @@ body {
   }
 
   #grid-wrapper-kommunikation {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Tahoma, sans-serif;
     width: 100%;
     height: 200vh;
     grid-template-areas: "sb info1 sd" "sb info2 sd" "sb info3 sd" "sb info4 sd" "fw fw fw";
@@ -184,7 +184,7 @@ body {
       grid-template-columns: 10% 20% 20% 20% 20% 10%;
   }
   #grid-wrapper-blogg {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Tahoma, sans-serif;
       width: 100%;
       height: 100%;
       grid-template-areas: "sb nv nv sd" "sb a1 a2 sd" "sb a3 a4 sd" "sb a5 a6 sd" "sb fw fw sd";
@@ -193,7 +193,7 @@ body {
       grid-gap: 5px;
   }
   #grid-wrapper-galleri {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Tahoma, sans-serif;
       width: 100%;
       height: 100%;
       grid-template-areas: "sb nv nv sd" "sb g1 g2 sd" "sb g3 g4 sd" "sb g5 g6 sd" "sb fw fw sd";
@@ -202,7 +202,7 @@ body {
       grid-gap: 5px;
   }
   #grid-wrapper-bat-fakta {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Tahoma, sans-serif;
       width: 100%;
       height: 200vh;
       grid-template-areas: "sb nv sd" "sb inf1 sd" "sb inf2 sd" "sb inf3 sd" "sb inf4 sd" "sb fw sd";
@@ -212,7 +212,7 @@ body {
   }
 
   #grid-wrapper-kommunikation {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Tahoma, sans-serif;
     width: 100%;
     height: 200vh;
     grid-template-areas: "sb nv sd" "sb info1 sd" "sb info2 sd" "sb info3 sd" "sb info4 sd" "sb fw sd";
@@ -224,7 +224,6 @@ body {
 
 @media screen and (min-width:1400px) {
   #grid-wrapper-blogg {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
       width: 100%;
       height: 100%;
       grid-template-areas: "sb nv nv nv sd" "sb a1 a2 a3 sd" "sb a4 a5 a6 sd" "sb fw fw fw sd";
@@ -233,7 +232,6 @@ body {
       grid-gap: 5px;
   }
   #grid-wrapper-galleri {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
       width: 100%;
       height: 100%;
       grid-template-areas: "sb nv nv nv sd" "sb g1 g2 g3 sd" "sb g4 g5 g6 sd" "sb fw fw fw sd";
@@ -242,7 +240,6 @@ body {
       grid-gap: 5px;
   }
   #grid-wrapper-bat-fakta {
-      font-family: "Comic Sans MS", "Comic Sans", cursive;
       width: 100%;
       height: 99vh;
       grid-template-areas: "sb nv nv sd" "sb inf1 inf2 sd" "sb inf3 inf4 sd" "sb fw fw sd";
@@ -252,7 +249,6 @@ body {
   }
 
   #grid-wrapper-kommunikation {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
     width: 100%;
     height: 99vh;
     grid-template-areas: "sb ll nv nv gg sd" 
@@ -467,13 +463,13 @@ body {
   overflow: hidden;
   background: rgb(55, 75, 131);
   background: linear-gradient(172deg, rgba(18, 96, 189, 1) 0%, rgba(55, 75, 131, 1) 100%);
-  font-family: Arial;
+  font-family: Tahoma, sans-serif;
   grid-area: nv;
 }
 
 .navbar_expander {
   padding: 8px 8px 8px 8px;
-  font-family: Arial, Verdana;
+  font-family: Tahoma, sans-serif;
   background: #172d69;
   background-position: 8px 8px;
   background-repeat: no-repeat;
