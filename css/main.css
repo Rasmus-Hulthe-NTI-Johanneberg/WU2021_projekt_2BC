@@ -76,6 +76,10 @@ body {
   .navbar_expander{
     display: none;
   }
+
+  .navbar_expander_blogg{
+    display: none;
+  }
 #grid-wrapper{
 
   grid-template-areas: 
