@@ -1,4 +1,4 @@
-var showing_val = false 
+var showing_val = true 
 
 
 function show(){
