@@ -10,6 +10,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+#black{
+  background: none;
+
+  color: black;
+
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
 .icon {
   max-height: 32px;
   max-width: 32px;
@@ -29,7 +38,14 @@ body {
   right: 0;
 }
 
+
+
 .information_bat_fakta {
+  display: flex;
+  align-items: center;
+}
+
+.information_kommunikation {
   display: flex;
   align-items: center;
 }
@@ -68,26 +84,48 @@ body {
       grid-template-rows: repeat(6, 1fr) 0.1fr;
       grid-gap: 5px;
   }
-  #information_bat_fakta_1 {
-      grid-area: inf1;
+  #information_kommunikation_1 {
+      grid-area: info1;
       background: rgb(23, 45, 105);
       background: linear-gradient(180deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
   }
-  #information_bat_fakta_2 {
-      grid-area: inf2;
+  #information_kommunikation_2 {
+      grid-area: info2;
       background: rgb(23, 45, 105);
       background: radial-gradient(circle, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
   }
-  #information_bat_fakta_3 {
-      grid-area: inf3;
+  #information_kommunikation_3 {
+      grid-area: info3;
       background: rgb(23, 45, 105);
       background: radial-gradient(circle, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
   }
-  #information_bat_fakta_4 {
-      grid-area: inf4;
+  #information_kommunikation_4 {
+      grid-area: info4;
       background: rgb(23, 45, 105);
       background: linear-gradient(0deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
   }
+
+
+  #information_bat_fakta_1 {
+    grid-area: inf1;
+    background: rgb(23, 45, 105);
+    background: linear-gradient(180deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
+}
+#information_bat_fakta_2 {
+    grid-area: inf2;
+    background: rgb(23, 45, 105);
+    background: radial-gradient(circle, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
+}
+#information_bat_fakta_3 {
+    grid-area: inf3;
+    background: rgb(23, 45, 105);
+    background: radial-gradient(circle, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
+}
+#information_bat_fakta_4 {
+    grid-area: inf4;
+    background: rgb(23, 45, 105);
+    background: linear-gradient(0deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
+}
   #grid-wrapper-bat-fakta {
       font-family: "Comic Sans MS", "Comic Sans", cursive;
       width: 100%;
@@ -97,6 +135,17 @@ body {
       grid-template-rows: repeat(4, 1fr) 0.1fr;
       grid-gap: 5px;
   }
+
+  #grid-wrapper-kommunikation {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    height: 200vh;
+    grid-template-areas: "sb info1 sd" "sb info2 sd" "sb info3 sd" "sb info4 sd" "fw fw fw";
+    grid-template-columns: 0.2fr repeat(1, 1fr) 0.2fr;
+    grid-template-rows: repeat(4, 1fr) 0.1fr;
+    grid-gap: 5px;
+}
+
   .information_text {
       font-size: 30px;
   }
@@ -161,6 +210,16 @@ body {
       grid-template-rows: 0.1fr repeat(4, 1fr) 0.1fr;
       grid-gap: 5px;
   }
+
+  #grid-wrapper-kommunikation {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    height: 200vh;
+    grid-template-areas: "sb nv sd" "sb info1 sd" "sb info2 sd" "sb info3 sd" "sb info4 sd" "sb fw sd";
+    grid-template-columns: 0.2fr repeat(1, 1fr) 0.2fr;
+    grid-template-rows: 0.1fr repeat(4, 1fr) 0.1fr;
+    grid-gap: 5px;
+}
 }
 
 @media screen and (min-width:1400px) {
@@ -191,26 +250,61 @@ body {
       grid-template-rows: 0.15fr repeat(2, 1fr) 0.1fr;
       grid-gap: 5px;
   }
+
+  #grid-wrapper-kommunikation {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    height: 99vh;
+    grid-template-areas: "sb ll nv nv gg sd" 
+                         "sb info1 info1 info2 info2 sd" 
+                         "sb info3 info3 info4 info4 sd" 
+                         "fw fw fw fw fw fw";
+    grid-template-columns:  0.5fr 0.5fr repeat(2, 1fr) 0.5fr 0.5fr;
+    grid-template-rows: 0.15fr repeat(2, 1fr) 0.1fr;
+    grid-gap: 5px;
+}
+  #information_kommunikation_1 {
+      grid-area: info1;
+      background: rgb(23, 45, 105);
+      background: linear-gradient(225deg, rgba(53,19,157,0.17689082468925066) 0%, rgba(74,87,171,1) 100%);
+  }
+  #information_kommunikation_2 {
+      grid-area: info2;
+      background: rgb(23, 45, 105);
+      background: linear-gradient(45deg, rgba(53,19,157,0.17689082468925066) 0%, rgba(74,87,171,1) 100%);
+  }
+  #information_kommunikation_3 {
+      grid-area: info3;
+      background: rgb(23, 45, 105);
+      background: linear-gradient(315deg, rgba(53,19,157,0.17689082468925066) 0%, rgba(74,87,171,1) 100%);
+  }
+  #information_kommunikation_4 {
+      grid-area: info4;
+      background: rgb(23, 45, 105);
+      background: linear-gradient(135deg, rgba(53,19,157,0.17689082468925066) 0%, rgba(74,87,171,1) 100%);
+  }
+
   #information_bat_fakta_1 {
-      grid-area: inf1;
-      background: rgb(23, 45, 105);
-      background: linear-gradient(315deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
-  }
-  #information_bat_fakta_2 {
-      grid-area: inf2;
-      background: rgb(23, 45, 105);
-      background: linear-gradient(225deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
-  }
-  #information_bat_fakta_3 {
-      grid-area: inf3;
-      background: rgb(23, 45, 105);
-      background: linear-gradient(45deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
-  }
-  #information_bat_fakta_4 {
-      grid-area: inf4;
-      background: rgb(23, 45, 105);
-      background: linear-gradient(135deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
-  }
+    grid-area: inf1;
+    background: rgb(23, 45, 105);
+    background: linear-gradient(315deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
+}
+#information_bat_fakta_2 {
+    grid-area: inf2;
+    background: rgb(23, 45, 105);
+    background: linear-gradient(225deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
+}
+#information_bat_fakta_3 {
+    grid-area: inf3;
+    background: rgb(23, 45, 105);
+    background: linear-gradient(45deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
+}
+#information_bat_fakta_4 {
+    grid-area: inf4;
+    background: rgb(23, 45, 105);
+    background: linear-gradient(135deg, rgba(23, 45, 105, 1) 0%, rgba(55, 78, 204, 0.406582701439951) 100%);
+}
+
 }
 
 .center {
@@ -465,3 +559,4 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
