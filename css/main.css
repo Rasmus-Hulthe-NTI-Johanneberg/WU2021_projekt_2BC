@@ -12,7 +12,7 @@
 
 #black{
   background: none;
-
+  font-size: 32px;
   color: black;
 
   background-clip: initial;
@@ -20,8 +20,8 @@
   -webkit-text-fill-color: initial;
 }
 .icon {
-  max-height: 32px;
-  max-width: 32px;
+  max-height: 69px;
+  max-width: 60px;
 }
 
 .img {
