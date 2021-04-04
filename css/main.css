@@ -66,6 +66,9 @@ body {
   
   }
 
+
+
+ 
 }
 
 @media screen and (min-width:1000px) {
@@ -74,6 +77,18 @@ body {
     display: block;
   }
   .navbar_expander{
+    display: none;
+  }
+
+  .navbar_expander_bat_fakta{
+    display: none;
+  }
+
+  .navbar_expander_kommunikation{
+    display: none;
+  }
+
+  .navbar_expander_pop{
     display: none;
   }
 
@@ -108,6 +123,47 @@ body {
   
   }
 
+  #grid-wrapper-bat-fakta{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    height: 200vh;
+    grid-template-areas: 
+        "sb nv sd"
+        "sb inf1 sd"
+        "sb inf2 sd"
+        "sb inf3 sd"
+        "sb inf4 sd"
+        "sb fw sd";
+  
+    grid-template-columns: 0.2fr repeat(1, 1fr) 0.2fr;
+    grid-template-rows: 0.1fr repeat(4,1fr) 0.1fr;
+    grid-gap: 5px;
+  }
+  
+#information_bat_fakta_1{
+  grid-area: inf1;
+  background: rgb(23,45,105);
+  background: linear-gradient(180deg, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582701439951) 100%); }
+
+#information_bat_fakta_2{
+  grid-area: inf2;
+  background: rgb(23,45,105);
+  background: radial-gradient(circle, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582701439951) 100%); 
+}
+
+#information_bat_fakta_3{
+  grid-area: inf3;
+  background: rgb(23,45,105);
+  background: radial-gradient(circle, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582701439951) 100%); 
+}
+
+#information_bat_fakta_4{
+  grid-area: inf4;
+  background: rgb(23,45,105);
+  background: linear-gradient(0deg, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582701439951) 100%); 
+}
+
+
 }
 
 
@@ -129,10 +185,47 @@ body {
   
   }
   
+
+  #grid-wrapper-bat-fakta{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width: 100%;
+    height: 99vh;
+    grid-template-areas: 
+        "sb nv nv sd"
+        "sb inf1 inf2 sd"
+        "sb inf3 inf4 sd"
+        "sb fw fw sd";
+  
+    grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
+    grid-template-rows: 0.15fr repeat(2,1fr) 0.1fr;
+    grid-gap: 5px;
+  }
+  
+#information_bat_fakta_1{
+  grid-area: inf1;
+  background: rgb(23,45,105);
+  background: linear-gradient(315deg, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582701439951) 100%);
 }
 
+#information_bat_fakta_2{
+  grid-area: inf2;
+  background: rgb(23,45,105);
+background: linear-gradient(225deg, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582701439951) 100%);
+}
 
+#information_bat_fakta_3{
+  grid-area: inf3;
+  background: rgb(23,45,105);
+background: linear-gradient(45deg, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582701439951) 100%);
+}
 
+#information_bat_fakta_4{
+  grid-area: inf4;
+  background: rgb(23,45,105);
+  background: linear-gradient(135deg, rgba(23,45,105,1) 0%, rgba(55,78,204,0.406582701439951) 100%);
+
+}
+}
 
 
 
